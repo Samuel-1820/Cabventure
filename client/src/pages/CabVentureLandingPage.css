@@ -1,0 +1,317 @@
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; /* Modern system font stack */
+    margin: 0;
+    font-size: 16px; 
+    color: #333; 
+    background-color: #f1f1f1
+    
+  }
+  
+  .container {
+    max-width: 1080px; 
+    padding: 2rem 0; 
+    margin: 0 auto;
+    
+  }
+  .header {
+    position: relative;
+    text-align: center;
+  }
+  
+  .header-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: brightness(0.8); 
+  }
+  
+  .header-content {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.3); 
+    padding: 2rem 0; 
+    color: white;
+  }
+
+  .section {
+    padding: 2rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Lighter border */
+  }
+  
+  .reviews-section {
+    overflow: hidden;
+  }
+  
+  .review-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 2rem; 
+  }
+  
+  .review-card {
+    background-color: #fff; 
+    border: none; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 300px; 
+    flex-shrink: 0;
+    border-radius: 8px; 
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .review-card:hover {
+    transform: scale(1.03); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .review-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem; 
+  }
+  
+  .review-name {
+    font-weight: bold;
+  }
+  
+  .faq-item {
+    cursor: pointer;
+    margin: 1.5rem 0; 
+  }
+  
+  .faq-item strong {
+    display: block;
+    margin-bottom: 0.5rem; 
+  }
+  
+  .faq-item p {
+    margin: 0.5rem 0 0;
+  }
+  .footer {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .footer-links {
+    margin: 10px 0;
+  }
+  
+  .footer-links a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-content a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  .footer-content a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 600px) {
+    .container {
+      padding: 1rem 0;
+    }
+  
+    .header-content {
+      padding: 1rem 0;
+    }
+  
+    .section {
+      padding: 1rem 0;
+    }
+  
+    .review-card {
+      width: 90%;
+    }
+  }
+  /* CabVentureLandingPage.css */
+
+.bg-black {
+    background-color: #0f0e0e;
+  }
+  
+  .text-orange-500 {
+    color: #fbfaf9;
+  }
+  
+  .hover\:bg-primary:hover {
+    background-color: rgb(247, 101, 61);
+  }
+  
+  .group:hover .group-hover\:text-orange-500 {
+    color: #f7b29d;
+  }
+  /* CabVentureLandingPage.css */
+
+.hover\:text-black:hover {
+    color: #000;
+  }
+  
+  .cta-button {
+    background-color: #f79ddc; /* Default background color */
+    color: #fff; /* Default text color */
+    padding: 10px 20px; /* Default padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transition for smooth effect */
+  }
+  
+  /* Hover state styles */
+  .cta-button:hover {
+    background-color: #fc9797; /* Hover background color */
+    padding: 12px 22px; /* Increase padding on hover */
+    transform: scale(1.2);
+  }
+ /* CabVentureLandingPage.css */
+body {
+  position: relative;
+}
+
+body::before {
+  content: "";
+  background-image: url('https://canepa.com/wp-content/uploads/2014/06/faded-cars-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2; 
+  z-index: -1;
+}
+.about-us-section {
+  padding: 50px 0;
+}
+
+.about-us-content {
+  display: flex;
+  align-items: center; /* Center vertically on y-axis */
+  justify-content: space-between;
+}
+
+.about-us-text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.about-us-image {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Center horizontally on x-axis */
+  align-items: center; /* Center vertically on y-axis */
+}
+
+.about-us-image img {
+  width: 90%;
+  height: auto;
+}
+
+.car-image-container img {
+  width: 50%;
+  height: auto;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.header {
+  padding: 50px 0;
+}
+
+.footer {
+  padding: 20px 0;
+}
+
+.review-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.review-card {
+  text-align: center;
+  margin: 20px;
+}
+
+.review-name {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.review-text {
+  font-style: italic;
+}
+.collaboration-section {
+  background-color: #fa581d; /* Blue background color */
+  padding: 40px 0; /* Adjust padding as needed */
+}
+
+.blue-container {
+  text-align: center;
+}
+
+.collaboration-heading {
+  color: #fff; /* White text color */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #fff; /* White button background */
+  color: #007bff; /* Blue button text color */
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #170902; /* Darker blue on hover */
+  color: #fff; /* White text color on hover */
+}
+.hero-subheading {
+  margin-bottom: 1000px; /* Add some vertical space */
+  padding-bottom: 20px;
+}
+.hero-heading {
+  font-size: 3.5rem; /* Adjust the value as needed */
+  text-decoration: underline;
+}
+.hero-subheading {
+  font-size: 1.4rem;
+}
+.cta-button {
+  font-size: 1.2rem; /* Adjust the value as needed */
+}
+.hero-description {
+  margin-bottom: 1000px; /* Add some vertical space */
+  padding-bottom: 20px;
+}

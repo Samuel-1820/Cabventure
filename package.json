@@ -1,0 +1,31 @@
+{
+  "name": "Cabventure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "15.7.0",
+    "npm": "7.4.3"
+  },
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@auth0/auth0-react": "^2.2.4",
+    "express": "^4.17.1",
+    "init": "^0.1.2",
+    "krk": "^0.0.0",
+    "mongoose": "^6.0.11",
+    "nodemon": "^2.0.14",
+    "npm": "^10.8.0",
+    "stripe": "^8.184.0",
+    "uuid": "^8.3.2"
+  }
+}
